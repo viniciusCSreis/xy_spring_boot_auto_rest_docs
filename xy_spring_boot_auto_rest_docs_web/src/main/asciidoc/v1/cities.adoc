@@ -1,0 +1,6 @@
+== Cities
+
+
+include::{snippets}/city-controller-test/create-city-test/auto-section.adoc[]
+
+include::{snippets}/city-controller-test/find-all-cities-test/auto-section.adoc[]

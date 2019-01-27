@@ -1,0 +1,17 @@
+=== Errors
+
+==== Invalid request
+If the request is invalid, then a HTTP Status Code `400 Bad Request` will be returned with the payload in the following format:
+
+include::{snippets}/offer-controller-test/should-not-create-offer-when-required-field-is-not-informed/http-response.adoc[]
+
+==== Resource not found
+If the resource is not found the HTTP Status Code `404 Not Found` will be returned
+
+==== Unauthorized
+If the authorization request headers are incomplete or incorrect the HTTP Status Code `401 Unauthorized` will be returned
+
+==== Forbidden
+If the authentication credentials provided does not have sufficient permission to execute some actions, the HTTP Status Code `403 Forbidden` will be returned
+
+TIP: For more information about the HTTP Codes see <<http-status, HTTP Codes>>
